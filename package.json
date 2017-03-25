@@ -1,0 +1,36 @@
+{
+  "name": "nightwatch-sample-tests",
+  "version": "1.0.24",
+  "description": "This contains Nightwatch automated tests for basic image upload, search and page navigations.",
+  "main": "index.js",
+  "engines": {
+    "node": "4.4.6"
+  },
+  "scripts": {
+    "postinstall": "node nightwatch.conf.js",
+    "test": "./node_modules/.bin/nightwatch --env local",
+    "ie": "./node_modules/.bin/nightwatch -e ie11",
+    "sauce": "./node_modules/.bin/nightwatch -e chrome,ie11,android_s4_emulator,iphone_6_simulator",
+    "dev": "./node_modules/.bin/nodemon -w test/index.html --delay 250ms --exec 'npm run upload'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prasadiw/Nightwatchjs.git"
+  },
+  "devDependencies": {
+    "env2": "^2.1.1",
+    "mime-types": "^2.1.13",
+    "nightwatch": "^0.9.14",
+    "nodemon": "^1.11.0",
+    "selenium-download": "^2.0.9"
+  },
+  "keywords": [
+    "nightwatch",
+    "testing",
+    "front-end",
+    "UI",
+    "browser",
+    "test",
+    "testing"
+  ]
+}
