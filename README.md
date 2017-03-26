@@ -66,10 +66,22 @@ TC 2: Test Loading Random Mode
 - Verify locating Random Mode button and page navigation upon button click
 - Verify new page with a random post by locating post header and post image/images, locating Random posts panel header.
 
-Instructions:
-
 Special comments:
 * Test fails can be happened due to time outs with element loading due to slow internet bandwidth.
+
+### Instructions:
+
+1. Clone the project 
+
+2. Install the required dependencies using below command:
+
+   npm install
+
+3. Run tests:
+
+- step 1: Copy test/tests you want to run in to ./test folder from v1.0 folder (v1.0 folder includes all the test related to this project)
+- step 2: Run below command
+  npm test
 
 ### References
 
