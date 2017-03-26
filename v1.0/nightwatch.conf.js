@@ -4,7 +4,7 @@ const BINPATH = './node_modules/nightwatch/bin/'; // change if required.
 
 const config = { // we use a nightwatch.conf.js file so we can include comments and helper functions
   "src_folders": [
-    "test/e2e"     // we use '/test' as the name of our test directory by default. So 'test/e2e' for 'e2e'.
+    "ImgurTests"     // test directory.
   ],
   "output_folder": "./node_modules/nightwatch/reports", // reports (test outcome) output by Nightwatch
   "selenium": {
@@ -15,6 +15,7 @@ const config = { // we use a nightwatch.conf.js file so we can include comments 
     "port": 4444,
     "cli_args": {
       "webdriver.chrome.driver" : BINPATH + "chromedriver" // also downloaded by selenium-download
+	  //"webdriver.gecko.driver" : BINPATH + "geckodriver.exe"
     }
   },
   "test_workers" : {"enabled" : true, "workers" : "auto"}, // perform tests in parallel where possible
@@ -113,7 +114,3 @@ require('fs').stat(BINPATH + 'selenium.jar', function (err, stat) { // got it?
     });
   }
 });
-
-function padLeft (count) { // theregister.co.uk/2016/03/23/npm_left_pad_chaos/
-  return count < 10 ? '0' + count : count.toString();
-}
