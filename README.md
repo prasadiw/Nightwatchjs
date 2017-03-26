@@ -64,7 +64,7 @@ TC 1: Test Load Imgur web site
 TC 2: Test Loading Random Mode
 
 - Verify locating Random Mode button and page navigation upon button click
-- Verify new page with a random post by locating post header and post image/images, locating 'RAMDOM' post panel header.
+- Verify new page with a random post by locating post header and post image/images, locating Random posts panel header.
 
 Instructions:
 
