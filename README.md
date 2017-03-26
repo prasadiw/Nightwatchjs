@@ -72,9 +72,7 @@ TC 2: Test Loading Random Mode
 
 * intermitted error : Failed to create a new post from home page.
 
-![Intermitted error - New Post](C:\Users\Admin\Desktop\error screenshots)
-
-  Error text: 'There was an error. Please try again.' 
+[![Intermitted error - New Post](C:\Users\Admin\Desktop\error screenshots)
 
 ### Instructions:
 
