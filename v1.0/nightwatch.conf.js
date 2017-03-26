@@ -1,10 +1,9 @@
-require('env2')('.env'); // optionally store your environment variables in .env
 const PKG = require('./package.json'); // so we can get the version of the project
 const BINPATH = './node_modules/nightwatch/bin/'; // change if required.
 
 const config = { // we use a nightwatch.conf.js file so we can include comments and helper functions
   "src_folders": [
-    "ImgurTests"     // test directory.
+    "test"     // we use '/test' as the name of our test directory by default. So 'test/e2e' for 'e2e'.
   ],
   "output_folder": "./node_modules/nightwatch/reports", // reports (test outcome) output by Nightwatch
   "selenium": {
@@ -15,22 +14,11 @@ const config = { // we use a nightwatch.conf.js file so we can include comments 
     "port": 4444,
     "cli_args": {
       "webdriver.chrome.driver" : BINPATH + "chromedriver" // also downloaded by selenium-download
-	  //"webdriver.gecko.driver" : BINPATH + "geckodriver.exe"
+      //"webdriver.gecko.driver": BINPATH + "geckodriver.exe"
     }
   },
-  "test_workers" : {"enabled" : true, "workers" : "auto"}, // perform tests in parallel where possible
+  "test_workers": { "enabled": true, "workers": "auto" }, // perform tests in parallel where possible
   "test_settings": {
-    "default": {
-      "launch_url": "http://localhost", // we're testing a Public or "staging" site on Saucelabs
-      "selenium_port": 80,
-      "selenium_host": "ondemand.saucelabs.com",
-      "silent": true,
-      "username" : "${SAUCE_USERNAME}",     // if you want to use Saucelabs remember to
-      "access_key" : "${SAUCE_ACCESS_KEY}", // export your environment variables (see readme)
-      "globals": {
-        "waitForConditionTimeout": 10000    // wait for content on the page before continuing
-      }
-    },
     "local": {
       "launch_url": "http://localhost",
       "selenium_port": 4444,
@@ -66,14 +54,14 @@ const config = { // we use a nightwatch.conf.js file so we can include comments 
         "version": "11.0"
       }
     },
-    "firefox" : {
+    "firefox": {
       "desiredCapabilities": {
         "platform": "XP",
         "browserName": "firefox",
         "version": "33"
       }
     },
-    "internet_explorer_10" : {
+    "internet_explorer_10": {
       "desiredCapabilities": {
         "platform": "Windows 7",
         "browserName": "internet explorer",
@@ -108,7 +96,7 @@ module.exports = config;
  */
 require('fs').stat(BINPATH + 'selenium.jar', function (err, stat) { // got it?
   if (err || !stat || stat.size < 1) {
-    require('selenium-download').ensure(BINPATH, function(error) {
+    require('selenium-download').ensure(BINPATH, function (error) {
       if (error) throw new Error(error); // no point continuing so exit!
       console.log('✔ Selenium & Chromedriver downloaded to:', BINPATH);
     });
