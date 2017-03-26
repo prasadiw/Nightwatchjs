@@ -1,4 +1,3 @@
-require('env2')('.env'); // optionally store your environment variables in .env
 const PKG = require('./package.json'); // so we can get the version of the project
 const BINPATH = './node_modules/nightwatch/bin/'; // change if required.
 
@@ -14,21 +13,12 @@ const config = { // we use a nightwatch.conf.js file so we can include comments 
     "host": "127.0.0.1",
     "port": 4444,
     "cli_args": {
-      //"webdriver.chrome.driver" : BINPATH + "chromedriver" // also downloaded by selenium-download
-      "webdriver.gecko.driver": BINPATH + "geckodriver.exe"
+      "webdriver.chrome.driver" : BINPATH + "chromedriver" // also downloaded by selenium-download
+      //"webdriver.gecko.driver": BINPATH + "geckodriver.exe"
     }
   },
   "test_workers": { "enabled": true, "workers": "auto" }, // perform tests in parallel where possible
   "test_settings": {
-    "default": {
-      "launch_url": "http://localhost", // we're testing a Public or "staging" site on Saucelabs
-      "selenium_port": 80,
-      "selenium_host": "ondemand.saucelabs.com",
-      "silent": true,
-      "globals": {
-        "waitForConditionTimeout": 10000    // wait for content on the page before continuing
-      }
-    },
     "local": {
       "launch_url": "http://localhost",
       "selenium_port": 4444,
@@ -38,7 +28,7 @@ const config = { // we use a nightwatch.conf.js file so we can include comments 
         "waitForConditionTimeout": 15000 // on localhost sometimes internet is slow so wait...
       },
       "desiredCapabilities": {
-        "browserName": "firefox",
+        "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
@@ -112,4 +102,3 @@ require('fs').stat(BINPATH + 'selenium.jar', function (err, stat) { // got it?
     });
   }
 });
-
