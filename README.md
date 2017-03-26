@@ -79,3 +79,6 @@ Nightwatch tests : https://github.com/dwyl/learn-nightwatch
 
 Nightwatch tests : http://nightwatchjs.org/guide
 
+### Tools used
+
+IDE : Visual Studio Code 1.10
