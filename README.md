@@ -71,7 +71,8 @@ TC 2: Test Loading Random Mode
 * Test fails can be happened due to time outs with element loading due to slow internet bandwidth.
 
 * intermitted error : Failed to create a new post from home page.
-  Error text: 'There was an error. Please try again.'
+
+  Error text: 'There was an error. Please try again.' ![Intermitted error - New Post](C:\Users\Admin\Desktop\error screenshots)
 
 ### Instructions:
 
