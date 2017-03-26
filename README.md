@@ -81,6 +81,7 @@ Special comments:
 
 - step 1: Copy test/tests you want to run in to ./test folder from v1.0 folder (v1.0 folder includes all the test related to this project)
 - step 2: Run below command
+
   npm test
 
 ### References
