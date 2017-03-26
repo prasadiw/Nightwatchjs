@@ -66,7 +66,7 @@ TC 2: Test Loading Random Mode
 - Verify locating Random Mode button and page navigation upon button click
 - Verify new page with a random post by locating post header and post image/images, locating Random posts panel header.
 
-Special comments:
+### Special comments:
 * Test fails can be happened due to time outs with element loading due to slow internet bandwidth.
 
 ### Instructions:
