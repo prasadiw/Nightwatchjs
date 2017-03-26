@@ -70,3 +70,12 @@ Instructions:
 
 Special comments:
 * Test fails can be happened due to time outs with element loading due to slow internet bandwidth.
+
+### References
+
+Nightwatch set up and configuration : https://github.com/dwyl/learn-nightwatch
+
+Nightwatch tests : https://github.com/dwyl/learn-nightwatch
+
+Nightwatch tests : http://nightwatchjs.org/guide
+
