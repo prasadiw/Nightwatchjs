@@ -1,11 +1,11 @@
 # Nightwatchjs
-This contains nightwatch automated tests for basic image uplaod,  search and page navigations.
+This contains nightwatch automated tests for basic image upload, search and page navigations.
 
 ### Requirement 1: New Post
 
 ####Test Suit 1: ImageUpload.js
 
-Verify image uplaod functionality from the home page
+Verify image upload functionality from the home page
 
 TC 1: Test Load Imgur web site
 
@@ -25,7 +25,7 @@ Verify new post header element availability in the page uploaded image availabil
 
 ####Test Suit 2: ExtraImagesUpload.js
 
-Verify extra images uplaod functionality
+Verify extra images upload functionality
 
 TC 1: Test image upload from home page
 
@@ -50,7 +50,7 @@ TC 2: Test Search Text
 
 - Verify locating the search input container
 - Verify search button functionality
-- Verify search result are tied to the search query by locating search text in the page header and result image titles.
+- Verify search results are tied to the search query by locating search text in the page header and result image titles.
 
 
 ### Requirement 3: Random Mode
@@ -63,12 +63,10 @@ TC 1: Test Load Imgur web site
 
 TC 2: Test Loading Random Mode
 
-- Verify locating Random Mode button and page navigation upone button click
+- Verify locating Random Mode button and page navigation upon button click
 - Verify new page with a random post by locating post header and post image/images, locating 'RAMDOM' post panel header.
 
 Instructions:
 
 Special comments:
-
-* Test fails can be happened due to time outs with element loading due to slow internet connectivity.
-* There are limitations with firefox browser lates version. That can affect for running tests.
+* Test fails can be happened due to time outs with element loading due to slow internet bandwidth.
