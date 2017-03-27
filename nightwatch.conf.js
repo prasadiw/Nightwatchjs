@@ -24,11 +24,18 @@ const config = { // we use a nightwatch.conf.js file so we can include comments 
       "selenium_port": 4444,
       "selenium_host": "127.0.0.1",
       "silent": true,
+	  "screenshots" : {
+      "enabled" : true,
+      "on_failure" : true,
+      "on_error" : false,
+      "path" : "./node_modules/nightwatch/screenshots/"
+      },
       "globals": {
         "waitForConditionTimeout": 15000 // on localhost sometimes internet is slow so wait...
       },
       "desiredCapabilities": {
         "browserName": "chrome",
+        //"browserName": "firefox",        
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
