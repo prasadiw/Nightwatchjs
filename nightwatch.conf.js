@@ -3,7 +3,7 @@ const BINPATH = './node_modules/nightwatch/bin/'; // change if required.
 
 const config = { // we use a nightwatch.conf.js file so we can include comments and helper functions
   "src_folders": [
-    "test"     // we use '/test' as the name of our test directory by default. So 'test/e2e' for 'e2e'.
+    "test"     // we use '/test' as the name of our test directory by default.
   ],
   "output_folder": "./node_modules/nightwatch/reports", // reports (test outcome) output by Nightwatch
   "selenium": {
