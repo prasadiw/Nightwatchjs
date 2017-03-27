@@ -116,4 +116,4 @@ Nightwatch tests : http://nightwatchjs.org/guide
 
 ### Tools used
 
-IDE : Visual Studio Code 1.10
+Code Editor : Visual Studio Code
