@@ -21,5 +21,6 @@ module.exports = {
 			.assert.containsText('div.sentence-sorting.search-sentence > span.search-term-text.sorting-text-align', searchtext)
 			//verify loading of the result panel. this have to be passed even when no results found for the search criteria.
 			.waitForElementVisible('div.panel.hidden > div#imagelist > div.posts.br5.posts-search.first-child', 5000)
+			.end()
 	}
 };
