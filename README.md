@@ -3,7 +3,7 @@ This contains nightwatch automated tests for basic image upload, search and page
 
 ### Requirement 1: New Post
 
-####Test Suit 1: ImageUpload.js
+#### Test Suit 1: uploadImage.js
 
 Verify image upload functionality from the home page
 
@@ -19,7 +19,7 @@ Verify image upload functionality from the home page
 
    Verify new post header element availability in the page uploaded image availability in the page.
 
-####Test Suit 2: ExtraImagesUpload.js
+####Test Suit 2: uploadExtraImages.js
 
 Verify extra images upload functionality
 
@@ -39,8 +39,6 @@ Verify extra images upload functionality
 ####Test Suit 1: searchImages.js
 
 This verifies the basic search functionality from the home page
-
-TC 2: Test Search Text
 
 - Verify locating the search input container
 
@@ -62,7 +60,7 @@ This verifies the auto complete search fucntionality
 
 ### Requirement 3: Random Mode
 
-####Test Suit: RandomMode.js
+####Test Suit: loadRandomMode.js
 
 This verifies the page navigation to a random post from home page.
 
@@ -72,15 +70,27 @@ This verifies the page navigation to a random post from home page.
 
 - Verify the page navigation by page url
 
+### Project Structure
+
+v2.0
+   |-- BasicTests (scripts for basic Post, Search, Random Mode functionalities)
+   |-- Extended Tests (Tests for Extra image upload, Auto complete search and Random Mode fucntionalities )
+   |-- nightwatch.conf.js (configuration file for above scripts)
+   |-- package.json (required libraries)
+
+README.md
+  |-- Test case descriptions and Instructions for run tests
+
+
 ### Special comments and Errors:
 
 * Test fails can be happened due to time outs with element loading due to slow internet bandwidth.
 
 * Intermitted error : Failed to create a new post from home page. Error Text : 'There was an error. Please try again.'
 
-  Screenshot: 
+  Screenshot: https://github.com/prasadiw/Nightwatchjs/blob/master/Documents/Issues/Intermitted%20error%20-%20image%20upload.png
 
-* This project includes seperate tests for Firefox browser with refactored tests.
+* Some tests are failed in firefox browser due element locating fails. A seperate refactored tests for firefox browser are included in https://github.com/prasadiw/Nightwatchjs/tree/master/v2.0/FireFoxSpecificTests directory.
 
 ### Instructions:
 
@@ -102,11 +112,10 @@ This verifies the page navigation to a random post from home page.
 
   npm test
 
-Note for compatibility test : 
+#### Note for compatibility test : 
 
 The default configuration of this project is for run tests in the Chrome browser. In order to run tests in the firefox browser, refer ./nightwatch.conf.js configuration file and follow the comments in the file.
 
-A seperate refactored tests for firefox browser are included in the .\v1.0\FireFoxTests directory
 
 ### References
 
