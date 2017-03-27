@@ -19,7 +19,7 @@ Verify image upload functionality from the home page
 
    Verify new post header element availability in the page uploaded image availability in the page.
 
-####Test Suit 2: uploadExtraImages.js
+#### Test Suit 2: uploadExtraImages.js
 
 Verify extra images upload functionality
 
@@ -36,7 +36,7 @@ Verify extra images upload functionality
 
 ### Requirement 2: Search
 
-####Test Suit 1: searchImages.js
+#### Test Suit 1: searchImages.js
 
 This verifies the basic search functionality from the home page
 
@@ -46,7 +46,7 @@ This verifies the basic search functionality from the home page
 
 - Verify search results are tied to the search query by locating search text in the page header and result image titles.
 
-####Test Suit 2: autoCompleteSearch.js
+#### Test Suit 2: autoCompleteSearch.js
 
 This verifies the auto complete search fucntionality
 
@@ -60,7 +60,7 @@ This verifies the auto complete search fucntionality
 
 ### Requirement 3: Random Mode
 
-####Test Suit: loadRandomMode.js
+#### Test Suit: loadRandomMode.js
 
 This verifies the page navigation to a random post from home page.
 
