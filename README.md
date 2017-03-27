@@ -1,6 +1,8 @@
 # Nightwatchjs
 This contains nightwatch automated tests for basic image upload, search and page navigations.
 
+(Latest tests are included in the v2.0 directory)
+
 ### Requirement 1: New Post
 
 #### Test Suit 1: uploadImage.js
