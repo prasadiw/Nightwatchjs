@@ -78,6 +78,8 @@ This verifies the page navigation to a random post from home page.
 
 * Intermitted error : Failed to create a new post from home page. Error Text : 'There was an error. Please try again.'
 
+  Screenshot: 
+
 * This project includes seperate tests for Firefox browser with refactored tests.
 
 ### Instructions:
