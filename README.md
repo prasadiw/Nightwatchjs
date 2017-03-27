@@ -73,12 +73,18 @@ This verifies the page navigation to a random post from home page.
 ### Project Structure
 
 v2.0
+
    |-- BasicTests (scripts for basic Post, Search, Random Mode functionalities)
+   
    |-- Extended Tests (Tests for Extra image upload, Auto complete search and Random Mode fucntionalities )
+   
    |-- nightwatch.conf.js (configuration file for above scripts)
+   
    |-- package.json (required libraries)
 
+
 README.md
+
   |-- Test case descriptions and Instructions for run tests
 
 
@@ -100,7 +106,7 @@ README.md
 
    npm install
 
-   This command install selenium and chrome driver as well. But the selenium server should be replaced with the latest version as   mentioned in the next step. 
+   This command installs selenium and chrome driver as well. But the selenium server should be replaced with the latest version as   mentioned in the next step. 
    
 3. Download latest selenium stand-alone server and include/replace it in to the .\node_modules\nightwatch\bin folder. Rename the latestnselenium server as 'selenium.jar'
 
