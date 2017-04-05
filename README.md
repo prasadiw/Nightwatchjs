@@ -52,9 +52,11 @@ This verifies the basic search functionality from the home page
 
 This verifies the auto complete search fucntionality
 
-- Verify auto complete search with tags
+- Verify auto complete search with SEARCH
 
-- Verfy auto complete serach with user
+- Verify auto complete search with TAGS
+
+- Verfy auto complete serach with USERS
 
 - Verify correct page navigation
 
@@ -74,7 +76,7 @@ This verifies the page navigation to a random post from home page.
 
 ### Project Structure
 
-v2.0
+v3.0
 
    |-- BasicTests (scripts for basic Post, Search, Random Mode functionalities)
    
@@ -102,7 +104,7 @@ README.md
 
 ### Instructions:
 
-1. Clone the project 
+1. Clone the project
 
 2. Install the required dependencies using below command:
 
@@ -116,7 +118,7 @@ README.md
 
 3. Run tests:
 
-- step 1: Copy test/tests you want to run in to ./test folder from v1.0 folder (v1.0 folder includes all the tests related to this project) 
+- step 1: Copy test/tests you want to run in to ./test folder from v1.0 folder (v3.0 folder includes all the tests related to this project) 
 
 - step 2: Run below command
 
